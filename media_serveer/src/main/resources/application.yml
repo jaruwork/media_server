@@ -1,4 +1,10 @@
 spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
   datasource:
     hikari:
       jdbc-url: jdbc:mysql://localhost:3306/MS
@@ -23,3 +29,6 @@ spring:
     generate-ddl: true
     show-sql: true
     database: mysql
+
+file:
+  upload-dir: /Users/iujung/jaru_media
